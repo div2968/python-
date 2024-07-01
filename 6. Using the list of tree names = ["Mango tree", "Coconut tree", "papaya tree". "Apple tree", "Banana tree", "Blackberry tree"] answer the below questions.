@@ -1,0 +1,13 @@
+tree_names = ["Mango tree", "Coconut tree", "Papaya tree", "Apple tree", "Banana tree", "Blackberry tree"]
+num_trees = len(tree_names)
+print("Number of tree names:", num_trees)
+tree_names_with_tree = [name for name in tree_names if "tree" in name.lower()]
+print("Tree names containing the word 'tree':", tree_names_with_tree)
+tree_names_starting_with_M = [name for name in tree_names if name.startswith("M")]
+print("Tree names starting with 'M':", tree_names_starting_with_M)
+longest_tree_name = max(tree_names, key=len)
+print("Longest tree name:", longest_tree_name)
+sorted_tree_names = sorted(tree_names)
+print("Tree names sorted alphabetically:")
+for name in sorted_tree_names:
+    print(name)
