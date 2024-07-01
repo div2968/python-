@@ -1,0 +1,54 @@
+# Initialize an empty list to store the numbers
+numbers = []
+
+# Iterate through each number in the range from 1500 to 2700 (both inclusive)
+for num in range(1500, 2701):
+    # Check if the number is divisible by 7 and a multiple of 5
+    if num % 7 == 0 and num % 5 == 0:
+        numbers.append(num)
+
+# Print the numbers found
+print("Numbers between 1500 and 2700 that are divisible by 7 and multiples of 5:")
+print(numbers)
+# Given string
+sentence = "Today is a sunny day."
+
+# Split the string into words
+words = sentence.split()
+
+# Access the first and third words
+first_word = words[0]  # "Today"
+second_word = words[3]  # "sunny"
+
+# Print the results
+print(first_word)
+print(second_word)
+# Given string
+last_two_letters = sentence[-2:]
+
+# Print the result
+print(last_two_letters)
+# Given string
+reversed_sentence = sentence[::-1]
+
+# Print the reversed string
+print(reversed_sentence)
+# Given string
+sentence = "Today is a sunny day."
+
+# Extract "Today" and "sunny"
+words = sentence.split()
+first_word = words[0]  # "Today"
+second_word = words[3]  # "sunny"
+
+# Obtain the last two letters
+last_two_letters = sentence[-2:]
+
+# Write the statement backwards
+reversed_sentence = sentence[::-1]
+
+# Print the results
+print("First word:", first_word)
+print("Second word:", second_word)
+print("Last two letters:", last_two_letters)
+print("Reversed sentence:", reversed_sentence)
