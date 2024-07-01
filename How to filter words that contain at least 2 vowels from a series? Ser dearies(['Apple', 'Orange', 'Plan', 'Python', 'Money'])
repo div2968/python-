@@ -1,0 +1,17 @@
+# Function to count vowels in a word
+def count_vowels(word):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in word:
+        if char in vowels:
+            count += 1
+    return count
+
+# Given series of words
+words = ['Apple', 'Orange', 'Plan', 'Python', 'Money']
+
+# Filter words with at least 2 vowels
+filtered_words = [word for word in words if count_vowels(word) >= 2]
+
+# Print the filtered words
+print("Words containing at least 2 vowels:", filtered_words)
