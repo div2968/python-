@@ -1,0 +1,16 @@
+# Ask the user to enter a string
+input_string = input("Enter a string: ")
+
+# Initialize an empty dictionary to store character counts
+char_count = {}
+
+# Count occurrences of each character in the string
+for char in input_string:
+    if char in char_count:
+        char_count[char] += 1
+    else:
+        char_count[char] = 1
+
+# Print the resulting dictionary
+print("Characters with their counts:")
+print(char_count)
